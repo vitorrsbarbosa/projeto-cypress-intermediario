@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 // ***********************************************************
 // This example support/e2e.js is processed and
 // loaded automatically before your test files.
@@ -14,7 +15,20 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+Cypress.Commands.add('login', () => {
+  cy.visit('users/sign_in');
+
+  cy.get("[data-qa-selector='login_field']").type(Cypress.env('user_name'));
+  cy.get("[data-qa-selector='password_field']").type(Cypress.env('user_password'), { log: false });
+  cy.get("[data-qa-selector='sign_in_button']").click();
+});
+
+Cypress.Commands.add('logout', () => {
+  cy.get('.qa-user-avatar').click();
+  cy.contains('Sign out').click();
+});
