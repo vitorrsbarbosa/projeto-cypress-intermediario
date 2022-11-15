@@ -4,7 +4,8 @@
   "description": "Projeto de estudos sobre cypress apresentando uma maior complexidade",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run",
+    "open": "npx cypress open"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vitorrsbarbosa/projeto-cypress-intermediario/issues"
   },
-  "homepage": "https://github.com/vitorrsbarbosa/projeto-cypress-intermediario#readme"
+  "homepage": "https://github.com/vitorrsbarbosa/projeto-cypress-intermediario#readme",
+  "devDependencies": {
+    "cypress": "^11.0.1"
+  }
 }
