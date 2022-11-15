@@ -1,0 +1,19 @@
+{
+  "name": "projeto-cypress-intermediario",
+  "version": "1.0.0",
+  "description": "Projeto de estudos sobre cypress apresentando uma maior complexidade",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorrsbarbosa/projeto-cypress-intermediario.git"
+  },
+  "author": "Vitor Barbosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorrsbarbosa/projeto-cypress-intermediario/issues"
+  },
+  "homepage": "https://github.com/vitorrsbarbosa/projeto-cypress-intermediario#readme"
+}
