@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "run":"npx cypress run --record --key 629d1753-3722-436f-9bb6-37175dbbf381"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/vitorrsbarbosa/projeto-cypress-intermediario#readme",
   "devDependencies": {
-    "cypress": "^11.0.1"
+    "cypress": "^11.0.1",
+    "faker": "^5.5.3"
   }
 }
