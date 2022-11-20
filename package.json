@@ -4,9 +4,9 @@
   "description": "Projeto de estudos sobre cypress apresentando uma maior complexidade",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
-    "open": "npx cypress open",
-    "run":"npx cypress run --record --key 629d1753-3722-436f-9bb6-37175dbbf381"
+    "cy:run": "cypress run",
+    "cy:open": "cypress open --e2e --browser electron",
+    "cy:dashboard": "cypress run --record --key 629d1753-3722-436f-9bb6-37175dbbf381"
   },
   "repository": {
     "type": "git",
@@ -23,3 +23,4 @@
     "faker": "^5.5.3"
   }
 }
+
